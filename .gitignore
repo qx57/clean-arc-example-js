@@ -12,3 +12,5 @@ logs/*
 
 lm-report.xml
 allure-results/
+
+chromedriver.exe
