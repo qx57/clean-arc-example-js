@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "service1": {
+      "base_url": "http://127.0.0.1"
+    },
+    "login_page": {
+      "url": "http://127.0.0.1/ui/login"
+    }
+  },
+  "stage": {
+    "service1": {
+      "base_url": "http://127.0.0.1:8080"
+    },
+    "login_page": {
+      "url": "http://127.0.0.1:8080/ui/login"
+    }
+  }
+}

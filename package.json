@@ -1,0 +1,19 @@
+{
+  "name": "clean-arc-light-js",
+  "version": "1.0.0",
+  "description": "Clean Architecture example JS project (with mocha test framework in core)",
+  "scripts": {
+    "test": "mocha --opts mocha.opts -r dotenv/config"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sync-request": "^5.0.0",
+    "selenium-webdriver": "^4.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

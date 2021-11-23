@@ -1,0 +1,14 @@
+.idea
+.vscode
+
+.DS_Store
+
+node_modules/
+coverage/*
+.nyc_output/*
+mochawesome*
+pacts/*
+logs/*
+
+lm-report.xml
+allure-results/
