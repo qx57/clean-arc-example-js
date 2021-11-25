@@ -1,4 +1,4 @@
-# Clean Architecture of automation tests (example for JS 11)
+# Clean Architecture of automation tests (example for JS)
 
 
 This repository contain example of clean architecture realization on Kotlin.
