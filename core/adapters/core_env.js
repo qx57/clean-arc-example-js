@@ -11,6 +11,8 @@ var parent = require('./_proto');
  *
  * REQUIRED!!!
  * This is, in facts, the standard of your client type
+ *
+ * And it object you'll use in your TDO's
  */
 var client = {
     getEnvironmentSettings: () => {

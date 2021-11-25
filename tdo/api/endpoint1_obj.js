@@ -16,6 +16,9 @@ module.exports.setClient = (current_client) => {
     return this;
 }
 
+/**
+ * Send request
+ */
 module.exports.request = (base_url) => {
     client.configure(base_url, schema);
     response = client.execute();

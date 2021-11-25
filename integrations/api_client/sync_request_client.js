@@ -21,17 +21,26 @@ var url = '';
 var path = '';
 var method = '';
 
+/**
+ * Hack for adapter's realization
+ */
 module.exports.setClient = (current_client) => {
     client = current_client;
     return this;
 }
 
+/**
+ * Set API configuration
+ */
 module.exports.configure = (base_url, schema) => {
     url = base_url;
     path = Object.keys(schema.paths)[0];
     method = Object.keys(Object.values(schema.paths)[0])[0].toUpperCase(); // Feature for JSON swagger schema draft-04
 }
 
+/**
+ * Send request and get response from API
+ */
 module.exports.execute = (json_body) => {
     var options = method == "GET" ? getOptions : postOptions;
     if (method != "GET" && json_body != undefined) { options.json = json_body; }

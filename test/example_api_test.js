@@ -23,6 +23,7 @@ var it = require.main.require('core/core').it;
 
 /**
  * Common methods
+ * In API we can use sync step (see core.js)
  */
 var step = require.main.require('core/core').step;
 

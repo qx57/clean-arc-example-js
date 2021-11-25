@@ -21,6 +21,7 @@ var it = require.main.require('core/core').it;
 
 /**
  * Common methods
+ * F**king Selenium - use async step only!
  */
 var step = require.main.require('core/core').asyncStep;
 

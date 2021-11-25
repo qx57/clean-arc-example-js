@@ -16,6 +16,8 @@ var parent = require('./_proto.js');
  *
  * REQUIRED!!!
  * This is, in facts, the standard of your client type
+ *
+ * And it object you'll use in your TDO's
  */
 var api_client = {
     configure: (base_url, schema) => {
@@ -27,7 +29,7 @@ var api_client = {
 }
 
 /**
- * Set the real client methods
+ * Set the real client methods with magic
  */
 module.exports.setIntegration = (current_client) => {
     api_client = parent.setIntegration(api_client, current_client);

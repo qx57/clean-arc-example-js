@@ -49,6 +49,8 @@ module.exports.awaitVisible = (duration, selector) => {
     return el;
 }
 
+/**
+ * Close window n quit session
+ */
 module.exports.close = () => { driver.close(); }
-
 module.exports.quit = () => { driver.quit(); }

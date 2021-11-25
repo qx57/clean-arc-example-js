@@ -10,6 +10,8 @@ var parent = require('./_proto.js');
  * Web Driver pseudointerface
  *
  * REQUIRED!!!
+ *
+ * It object you'll use in your TDO's!
  */
 var ui_wrapper = {
     loadPage: (url) => { console.log('Load page method not initialized!') },
