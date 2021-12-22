@@ -17,9 +17,9 @@ module.exports.setWebDriver = (current_driver) => {
 /**
  * Page elements
  */
-function loginField() { return web_driver.getElementByCss('#login_field'); }
-function passwordField() { return web_driver.getElementByXpath('/html/body/form/input[2]'); }
-function formButton() { return web_driver.getElementByCss('#submit'); }
+function loginField() { return web_driver.getElementByCss('#Username'); }
+function passwordField() { return web_driver.getElementByCss('#Password'); }
+function formButton() { return web_driver.getElementByCss('#login-button'); }
 
 /**
  * Get signin page

@@ -6,7 +6,7 @@
  */
 var web_driver;
 
-const message_field = 'div.message';
+const message_field = '#root > div > aside > div.AuthDrawer_footer__3gBbc > div > div > span.styles_typography__3DAh1.styles__14__3v4Rk.styles_body_accent__3YOh7';
 const default_avl = 30;
 
 /**
@@ -26,3 +26,13 @@ module.exports.init = () => web_driver.awaitVisible(default_avl, message_field);
  * Something do
  */
 module.exports.getMessage = () => web_driver.getInnerText(web_driver.getElementByCss(message_field));
+
+/**
+ * Page elements
+ */
+function exitButton() { return web_driver.getElementByCss('#root > div > aside > div.AuthDrawer_footer__3gBbc > button'); }
+
+/**
+ * send signin form
+ */
+module.exports.exitApp = () => web_driver.clickElement(exitButton());

@@ -37,8 +37,8 @@ var context = require('./context/ui_context');
  * like Environment Creator for storaging it
  */
 var test_user = {
-    login: "example_login",
-    password: "very_strong_password"
+    login: "",
+    password: ""
 }
 
 /**
@@ -68,10 +68,13 @@ describe('Example UI tests', () => {
             var success_auth_promise = success_auth_page.init();
             success_auth_promise.then(() => {
                 var message_promise = success_auth_page.getMessage();
-                message_promise.then((msg) => assert(msg).to.equal('Access granded!'));
+                message_promise.then((msg) => assert(msg).to.equal('Илья Гундерин!!!'));
             });
         });
-        // Close web driver;
+        step('Exit from app', promise, (done) => {
+            promise = success_auth_page.exitApp();
+        });
+        //Close web driver
         context.getWebDriver().close();
     });
 });
